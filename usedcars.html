@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Used Car Dealership</title>
+<link rel="stylesheet" href="usedcarsstyle.css">
+<script src="usedcarsfilter.js" defer></script>
+</head>
+
+<body>
+
+<header>
+<h1>Used Car Dealership</h1>
+</header>
+
+<main>
+
+<section class="filters">
+
+<h2>Search for Cars</h2>
+
+<label>Minimum Year</label>
+<input type="number" id="minYear">
+
+<label>Max Year</label>
+<input type="number" id="maxYear">
+
+<label>Maximum Mileage</label>
+<input type="number" id="maxMileage">
+
+<label>Max Price</label>
+<input type="number" id="maxPrice">
+
+<label>Make</label>
+<input list="makelist" id="make">
+<datalist id="makelist">
+   <option value="Toyota">
+   <option value="Honda">
+   <option value="Ford">
+   <option value="Nissan">
+   <option value="Chevrolet">
+    <option value="Volkswagen">
+    <option value="Hyundai">
+    <option value="Subaru">
+    <option value="Mazda">
+    <option value="Kia">
+    <option value="Dodge">
+    <option value="Cadillac">
+    <option value="Jaguar">
+    <option value="Tesla">
+    <option value="Porsche">
+    <option value="Lexus">
+    <option value="BMW">
+   
+</datalist>
+
+
+
+<label>Color</label>
+<input list="colorlist" id="color">
+<datalist id="colorlist">
+   <option value="Silver">
+   <option value="White">
+   <option value="Black">
+   <option value="Blue">
+   <option value="Red">
+    <option value="Gray">
+    <option value="Green">
+</datalist>
+
+
+
+
+<button onclick="searchCars()">Search</button>
+
+</section>
+
+<section id="car-listings"></section>
+
+</main>
+
+</body>
+</html>
